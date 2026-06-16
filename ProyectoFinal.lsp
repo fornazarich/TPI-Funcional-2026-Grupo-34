@@ -109,6 +109,22 @@
 	)
 )
 
+;; ========================================================
+;; FUNCIÓN: timer (Actualizada a la Iteracion 2)
+;; NATURALEZA: Pura (Ya que devolvera siempre el color ante el mismo timestamp)
+;; ESTRATEGIA: Estructura condicional y predicado (implementa cond para evaluar cada caso junto con comparaciones y rem)
+;; IMPACTO: No destructiva 
+;; ========================================================
+(defun timer(timestamp)
+	(cond
+		((< (rem timestamp 222) 90) 'Rojo)
+		((< (rem timestamp 222) 96) 'amarillo)
+    	((< (rem timestamp 222) 93) 'amarillo-intermitente)
+		((< (rem timestamp 222) 213) 'verde)
+		((< (rem timestamp 222) 219) 'amarillo)
+		(t 'amarillo-intermitente)
+	)
+)
 
 
 

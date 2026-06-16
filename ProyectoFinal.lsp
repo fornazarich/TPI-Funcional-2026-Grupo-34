@@ -23,21 +23,14 @@
 )
 ;; ==========================================================
 ;; FUNCIÓN: Timer
-;; NATURALEZA: Pura (no posee efectos secundarios)
+;; NATURALEZA: Impura (Ya que devolvera un color dependiendo del timestamp)
+;; ESTRATEGIA: Orden Inferior (implementa cond)
 ;; IMPACTO: No destructiva
-
-;; ========================================================
-
-
-(defun timer (tiempo-unix-actual)
+;; ==========================================================
+(defun timer(timestamp)
   (cond
-    ((< (rem tiempo-unix-actual 216) 90)
-     (list (rem tiempo-unix-actual 216) "cambiar-a-rojo"))
-
-    ((< (rem tiempo-unix-actual 216) 96)
-     (list (rem tiempo-unix-actual 216) "cambiar-a-amarillo"))
-
-    (t
-     (list (rem tiempo-unix-actual 216) 'accion-por-defecto))
+    ((< (rem timestamp 216) 90) 'Rojo)
+    ((< (rem timestamp 216) 96) 'Amaraillo)
+    (t 'Verde)
   )
 )

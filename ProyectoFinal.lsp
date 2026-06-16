@@ -34,3 +34,13 @@
     (t 'Verde)
   )
 )
+
+;; ========================================================
+;; FUNCIÓN: logging
+;; NATURALEZA: Impura (Ya que devuelve un mensaje en la pantalla con el tiempo y dos colores)
+;; ESTRATEGIA: Orden Inferior (implementa format)
+;; IMPACTO: No destructiva 
+;; ========================================================
+(defun logging (timestamp color-actual cambiar-a)
+	(format t "Tiempo ~A : la luz ha cambiado de ~A a ~A" timestamp color-actual cambiar-a)
+)

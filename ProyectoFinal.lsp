@@ -69,3 +69,16 @@
 		(t 'En-Rango)
 	)
 )
+
+;; ========================================================
+;; FUNCIÓN: ciclos-por-tiempo
+;; NATURALEZA: Pura (Muestra la cantidad de ciclos)
+;; ESTRATEGIA: Funciones Aritmeticas (Utiliza Suma y Division para el calculo)
+;; IMPACTO: No destructiva 
+;; ========================================================
+(defun ciclos-por-tiempo (cantidad-minutos duracion-ciclo)
+	(list 'Rojo (float (* 100 (/ 90 duracion-ciclo))) 
+		'Amarillo (float (* 100 (/ 6 duracion-ciclo))) 
+		'Verde  (float (* 100 (/ 120 duracion-ciclo))))
+	)
+

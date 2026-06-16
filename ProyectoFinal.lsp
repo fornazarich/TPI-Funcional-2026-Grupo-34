@@ -21,6 +21,7 @@
 		)
 	)
 )
+
 ;; ==========================================================
 ;; FUNCIÓN: Timer
 ;; NATURALEZA: Impura (Ya que devolvera un color dependiendo del timestamp)
@@ -43,4 +44,14 @@
 ;; ========================================================
 (defun logging (timestamp color-actual cambiar-a)
 	(format t "Tiempo ~A : la luz ha cambiado de ~A a ~A" timestamp color-actual cambiar-a)
+)
+
+;; ==========================================================
+;; FUNCIÓN: duracion-ciclo
+;; NATURALEZA: Pura (Siempre devuelve el mismo valor entero)
+;; ESTRATEGIA: Orden Inferior (utiliza suma)
+;; IMPACTO: No destructiva
+;; ==========================================================
+(defun duracion-ciclo ()
+  (+ 90 6 120)
 )

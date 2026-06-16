@@ -55,3 +55,17 @@
 (defun duracion-ciclo ()
   (+ 90 6 120)
 )
+
+;; ========================================================
+;; FUNCIÓN: recomendacion-ciclo
+;; NATURALEZA: Pura (Ya que solo retorna los simbolos)
+;; ESTRATEGIA: Estructura condicional (utiliza cond para evaluar cada caso )
+;; IMPACTO: No destructiva 
+;; ========================================================
+(defun recomendacion-ciclo (duracion-ciclo)
+	(cond
+		((>  35 duracion-ciclo) 'Bajo)
+		((> duracion-ciclo 150) 'Alto)
+		(t 'En-Rango)
+	)
+)

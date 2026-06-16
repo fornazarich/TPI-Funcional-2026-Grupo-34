@@ -126,7 +126,20 @@
 	)
 )
 
+;; ========================================================
+;; FUNCIÓN: informe
+;; NATURALEZA: Impura (Crea un archivo de texto)
+;; ESTRATEGIA: Ejecucion secuencial 
+;; IMPACTO: No destructiva 
+;; ========================================================
 
+(defun informe (datos)
+ 	(with-open-file (stream "informe-ejecucion-semaforo.txt" :direction :output)
+   		(format stream "Informe de Ejecución del Sistema Semafórico~%")
+   		(format stream "=========================================~%")
+    (logging datos stream)
+ 
+  	(format stream "~% --- Fin del Informe ---")))
 
 
 

@@ -21,3 +21,22 @@
 		)
 	)
 )
+;; ==========================================================
+;; FUNCIÓN: Timer
+;; NATURALEZA: Pura (no posee efectos secundarios)
+;; IMPACTO: No destructiva
+
+;; ========================================================
+
+(defun timer (tiempo-unix-actual)
+  (cond
+    ((< (rem tiempo-unix-actual 216) 90)
+     (list (rem tiempo-unix-actual 216) "cambiar-a-rojo"))
+
+    ((< (rem tiempo-unix-actual 216) 96)
+     (list (rem tiempo-unix-actual 216) "cambiar-a-amarillo"))
+
+    (t
+     (list (rem tiempo-unix-actual 216) 'accion-por-defecto))
+  )
+)

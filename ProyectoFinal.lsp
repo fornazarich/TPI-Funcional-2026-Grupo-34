@@ -141,7 +141,20 @@
  
   	(format stream "~% --- Fin del Informe ---")))
 
+;; ========================================================
+;; FUNCIÓN: logging 
+;; NATURALEZA: Impura (Interactua con el exterior)
+;; ESTRATEGIA: recursividad de cola (Utiliza una estructura cond)
+;; IMPACTO: No destructiva 
+;; ========================================================
+(defun logging (datos stream)
+	(cond 
+		((null datos ) nil)
+		((consp datos) (format stream "~A - Transición: ~A → ~A" (caar datos) (second (car datos)) (third (car datos))) (logging (cdr datos) stream))
+        (t (logging (cdr datos)))
+)
 
+)
 
 
 

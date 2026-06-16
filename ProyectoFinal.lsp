@@ -92,3 +92,33 @@
 		'Verde  (float (* 100 (/ 120 duracion-ciclo))))
 	)
 
+;; ======================================================== ITERACION 2 ======================================================== ;; 
+
+; ========================================================
+;; FUNCIÓN: transicion (Actualizado Iteracion 2)
+;; NATURALEZA: Pura (Ya que devuelve una lista segun la accion a realizar sin efectos secundarios)
+;; ESTRATEGIA: Estructura condicional (implementa cond para evaluar cada caso)
+;; IMPACTO: No destructiva 
+;; ========================================================
+(defun transicion (color-actual cambiar-a)
+	(cond 
+		 ((and (not (equal color-actual 'en-rojo)) (equal color-actual 'amarillo-intermitente) (equal cambiar-a 'rojo)) (list color-actual "cambiar-a-rojo"))
+		((and (not (equal color-actual 'en-amarillo)) (equal cambiar-a 'amarillo-intermitente)) (list color-actual "cambiar-a-amarillo-intermitente"))
+		((and (not (equal color-actual 'en-verde))  (equal color-actual 'amarillo-intermitente) (equal cambiar-a 'verde)) (list color-actual "cambiar-a-verde"))
+		(t (list color-actual 'accion-por-defecto))
+	)
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+

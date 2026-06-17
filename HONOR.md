@@ -1,11 +1,9 @@
 ---
 
-## 📜 Código de Honor y Declaración de Autoría
+## Código de Honor y Declaración de Autoría
 
-
-
-### 👤 Datos del Autor
-* **Integrante 1:** [Timoteo David Maidana Fornzarich] — **Usuario GitHub:** [[Usuario](https://github.com/fornazarich)]
+### Datos del Autor
+Integrante 1: Timoteo David Maidana Fornzarich — Usuario GitHub: fornazarich
 ---
 
 ### 💻 1. Código en Common Lisp (Fase 1 y 2)

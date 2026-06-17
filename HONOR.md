@@ -2,7 +2,7 @@
 
 ## 📜 Código de Honor y Declaración de Autoría
 
-> **Compromiso Académico:** Declaro que el desarrollo de este Trabajo Práctico Integrador se ha realizado bajo los lineamientos de honestidad académica, detallando a continuación el nivel de interacción con herramientas de Inteligencia Artificial.
+
 
 ### 👤 Datos del Autor
 * **Integrante 1:** [Timoteo David Maidana Fornzarich] — **Usuario GitHub:** [[Usuario](https://github.com/fornazarich)]

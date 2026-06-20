@@ -16,6 +16,20 @@
 
 ---
 
+## 📁 Estructura del proyecto
+- lisp/
+- comparativa/
+- docs/
+- README.md
+
+---
+
+## 📺 Videos del proyecto
+- Presentación: (link)
+- Explicación técnica: (pendiente)
+
+---
+
 ## 🎯 Objetivos del Proyecto
 
 El presente Trabajo Práctico Integrador tiene como finalidad aplicar los fundamentos del paradigma funcional para la resolución de un problema complejo de ingeniería. Se persiguen los siguientes objetivos clave:

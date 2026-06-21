@@ -25,8 +25,7 @@
 ---
 
 ## 📺 Videos del proyecto
-- Presentación: (link)
-- Explicación técnica: (pendiente)
+- Presentación: https://www.youtube.com/watch?v=gk6PblK2jwE
 
 ---
 
